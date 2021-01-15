@@ -2,7 +2,7 @@
 
 Use this to easily implement custom SVG Icons in Home Assistant. Unlike entity_picutre, this custom module will also update the icons color based on it's state.
 
-# Insturctions
+# Instructions
 
 1. Download & Copy Files
 
