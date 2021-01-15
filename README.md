@@ -34,3 +34,7 @@ const NAMESPACE = "file"
 If an invalid file path is specified, the module will automatically load a default icon containing a question mark.
 
 If you want to override the default icon for certain entities, and not just the icon in a specific lovelace card, you will have to [setup customization](https://www.home-assistant.io/docs/configuration/customizing-devices/).
+
+# Credits
+Fallback icon is part of https://github.com/prasertcbs/HueIconPackPng/blob/master/LICENSE.
+
