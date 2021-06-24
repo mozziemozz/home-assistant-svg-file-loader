@@ -5,11 +5,11 @@ const SVG_FOLDER_LOCATION = "/svg"
 const NAMESPACE = "file"
 
 async function loadFile(path) {
-	const response = await fetch(`/local${SVG_FOLDER_LOCATION}/${path}.svg`)
-	if (response.ok) {
-		const responseText = await response.text()
+    const response = await fetch(`/local${SVG_FOLDER_LOCATION}/${path}.svg`)
+    if (response.ok) {
+        const responseText = await response.text()
         const svgString = responseText.replace(/\r\n/g, "")
-		const svgPath = /path d="(.*?)"/.exec(svgString) || false
+        const svgPath = /path d="(.*?)"/.exec(svgString) || false
         if (svgPath) {
             return svgPath[1]
         }
@@ -18,11 +18,11 @@ async function loadFile(path) {
 }
 
 async function getIcon(name) {
-	const svgString = await loadFile(name)
-	return {
-		path: svgString,
-		viewBox: "0 0 32 32"
-	};
+    const svgString = await loadFile(name)
+    return {
+        path: svgString,
+        viewBox: "0 0 32 32"
+    };
 }
 
 window.customIconsets = window.customIconsets || {};
