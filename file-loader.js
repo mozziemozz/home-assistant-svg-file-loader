@@ -9,7 +9,7 @@ async function loadFile(path) {
     if (response.ok) {
         const responseText = await response.text()
         const svgString = responseText.replace(/\r\n/g, "")
-        const svgPath = /path d="(.*?)"/.exec(svgString) || false
+        const svgPath = / d="(.*?)"/.exec(svgString) || false
         if (svgPath) {
             return svgPath[1]
         }
