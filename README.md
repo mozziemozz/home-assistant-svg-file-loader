@@ -15,7 +15,7 @@ Use this to easily implement custom SVG Icons in Home Assistant. Unlike entity_p
 
 # Usage
 
-Specify custom icons using the file:```your_icon_name``` namespace. Don't include the file extension ```*.svg```.
+Specify custom icons like this ```file:your_icon_name``` where ```file``` is the namespace and ```your_icon_name``` is the filename of the SVG without the file extension.
 
 # Customization
 
